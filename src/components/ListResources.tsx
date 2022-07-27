@@ -1,8 +1,9 @@
-// import ViewResource from './ViewResource';
+import ViewResource from './ViewResource';
 import { Resource } from '../models/Resource';
 import { useState } from 'react';
 import { resources } from '../temp/resources';
 import ResourcesList from './ResourcesList';
+import { dateAsDate } from '../utils';
 
 const ListResources = () => {
 	const [selectedResourceId, setSelectedResourceId] = useState('');
@@ -18,10 +19,13 @@ const ListResources = () => {
 				setSelectedResourceId={setSelectedResourceId}
 			/>
 			{selectedResource ? (
-				<p>{selectedResource.resourceId}</p>
-			) : (
-				<p>Nothing selected</p>
-			)}
+				<ViewResource
+					resource={{
+						...selectedResource,
+						publishedDate: dateAsDate(selectedResource.publishedDate),
+					}}
+				/>
+			) : null}
 			{/* {resources.map((resource: Resource) => {
 				return (
 					<ViewResource
