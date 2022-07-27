@@ -26,20 +26,6 @@ const ListResources = () => {
 					}}
 				/>
 			) : null}
-			{/* {resources.map((resource: Resource) => {
-				return (
-					<ViewResource
-						key={resource.resourceId}
-						resource={{
-							...resource,
-							publishedDate:
-								typeof resource.publishedDate === 'string'
-									? new Date(resource.publishedDate)
-									: resource.publishedDate,
-						}}
-					/>
-				);
-			})} */}
 		</section>
 	);
 };

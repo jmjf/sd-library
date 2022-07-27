@@ -1,7 +1,7 @@
-import { Table, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/react';
+import { Table } from '@mantine/core';
 import { BaseSyntheticEvent, Dispatch, SetStateAction } from 'react';
 import { Resource } from '../models/Resource';
-import { booleanToYesNo, dateAsDate } from '../utils';
+import { booleanToYesNo, formatDate_MMM_YYYY } from '../utils';
 
 export interface ResourcesListProps {
 	resources: Resource[];
@@ -17,36 +17,31 @@ const ResourcesList = ({
 		setSelectedResourceId(resourceId);
 	};
 
+	const rows = resources.map((resource) => (
+		<tr
+			key={resource.resourceId}
+			onClick={(ev: BaseSyntheticEvent) => {
+				handleClick(resource.resourceId, ev);
+			}}
+		>
+			<td>{resource.resourceTitle}</td>
+			<td>{resource.resourceTypeCode}</td>
+			<td>{formatDate_MMM_YYYY(resource.publishedDate)}</td>
+			<td>{booleanToYesNo(resource.lendableFlag)}</td>
+		</tr>
+	));
+
 	return (
 		<Table id="resources-list">
-			<Thead>
-				<Tr>
-					<Th>Resource Title</Th>
-					<Th>Resource Type</Th>
-					<Th>Published Date</Th>
-					<Th>Lendable?</Th>
-				</Tr>
-			</Thead>
-			<Tbody>
-				{resources.map((resource) => (
-					<Tr
-						key={resource.resourceId}
-						onClick={(ev: BaseSyntheticEvent) => {
-							handleClick(resource.resourceId, ev);
-						}}
-					>
-						<Td>{resource.resourceTitle}</Td>
-						<Td>{resource.resourceTypeCode}</Td>
-						<Td>
-							{new Intl.DateTimeFormat('en-US', {
-								month: 'short',
-								year: 'numeric',
-							}).format(dateAsDate(resource.publishedDate))}
-						</Td>
-						<Td>{booleanToYesNo(resource.lendableFlag)}</Td>
-					</Tr>
-				))}
-			</Tbody>
+			<thead>
+				<tr>
+					<th>Resource Title</th>
+					<th>Resource Type</th>
+					<th>Published Date</th>
+					<th>Lendable?</th>
+				</tr>
+			</thead>
+			<tbody>{rows}</tbody>
 		</Table>
 	);
 };
