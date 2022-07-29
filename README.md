@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Spotted Dog Library
+
+A learning project using React that builds a library management system.
+
+Future additional things:
+
+- Some UI library, TBD
+- Jest unit tests (key motivator because I can't find good tutorials) and React Testing Library
+- Redux (probably)
+- Short term json-server; long-term backend using DDD/Clean Architecture, Fastify, Prisma
+
+## CRA standard README
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
