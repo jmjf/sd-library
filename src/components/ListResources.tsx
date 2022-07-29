@@ -1,11 +1,15 @@
 import ViewResource from './ViewResource';
 import { Resource } from '../models/Resource';
 import { useState } from 'react';
-import { resources } from '../temp/resources';
+
 import ResourcesList from './ResourcesList';
 import { dateAsDate } from '../utils';
 
-const ListResources = () => {
+interface ListResourcesProps {
+	resources: Resource[];
+}
+
+const ListResources = ({ resources }: ListResourcesProps) => {
 	const [selectedResourceId, setSelectedResourceId] = useState('');
 
 	const selectedResource = resources.find(

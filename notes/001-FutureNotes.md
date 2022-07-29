@@ -1,1 +1,0 @@
--  I want to support a safe CSP setup. Will probably require adding something to the build to generate hashes.

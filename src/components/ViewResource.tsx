@@ -1,7 +1,7 @@
 import { Resource, ResourceTypeValues } from '../models/Resource';
 import { formatDate_MMM_YYYY } from '../utils';
 
-export interface ViewResourceProps {
+interface ViewResourceProps {
 	resource: Resource;
 }
 
@@ -17,7 +17,7 @@ const ViewResource = ({ resource }: ViewResourceProps) => {
 	} = resource;
 
 	return (
-		<div id="resource-detail">
+		<div role="resource-detail">
 			<h3>{resourceTitle}</h3>
 			<p>Resource Type Code: {resourceTypeCode}</p>
 			<p>Lendable?: {lendableFlag ? 'Yes' : 'No'}</p>

@@ -3,7 +3,7 @@ import { BaseSyntheticEvent, Dispatch, SetStateAction } from 'react';
 import { Resource } from '../models/Resource';
 import { booleanToYesNo, formatDate_MMM_YYYY } from '../utils';
 
-export interface ResourcesListProps {
+interface ResourcesListProps {
 	resources: Resource[];
 	setSelectedResourceId: Dispatch<SetStateAction<string>>;
 }
@@ -23,6 +23,7 @@ const ResourcesList = ({
 			onClick={(ev: BaseSyntheticEvent) => {
 				handleClick(resource.resourceId, ev);
 			}}
+			data-testid={resource.resourceId}
 		>
 			<td>{resource.resourceTitle}</td>
 			<td>{resource.resourceTypeCode}</td>
@@ -32,7 +33,7 @@ const ResourcesList = ({
 	));
 
 	return (
-		<Table id="resources-list">
+		<Table role="resources-list">
 			<thead>
 				<tr>
 					<th>Resource Title</th>

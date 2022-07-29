@@ -1,9 +1,11 @@
 import ListResources from './components/ListResources';
 
+import { resources } from './temp/resources';
+
 function App() {
 	return (
 		<div className="App">
-			<ListResources />
+			<ListResources resources={resources} />
 		</div>
 	);
 }
