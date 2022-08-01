@@ -1,6 +1,7 @@
 import fs from 'fs';
-import xml2js from 'xml2js';
 import glob from 'glob';
+
+const DEBUG = false;
 
 // run in the directory containing the xml files
 const globPromise = function (pattern, options) {
@@ -11,113 +12,183 @@ const globPromise = function (pattern, options) {
 	});
 };
 
-const files = await globPromise('./*.xml');
+const files = await globPromise(
+	DEBUG ? './authors1.mods.json' : './*.mods.json'
+);
 
-const xmlPromises = files.map((file) => {
-	console.log(`processing ${file}`);
+const allData = files.map((file) => {
+	console.log(`reading ${file}`);
 
-	const xml = fs.readFileSync(file);
+	let rawData = fs.readFileSync(file).toString();
 
-	const fileData = xml2js.parseStringPromise(xml).then((parsedXml) => {
-		console.log('parsed xml');
-		const items = parsedXml.results.items[0]['mods:mods'];
-		const data = items.map(parseEntry);
-		return data;
-	});
+	// remove characters that require [] addressing
+	rawData = rawData.replaceAll('#text', 'text');
+	rawData = rawData.replaceAll('@authority', 'authority');
+	rawData = rawData.replaceAll('@type', 'type');
 
-	// fs.writeFileSync(`${file}.json`, JSON.stringify(fileData, null, 3));
-	return fileData;
+	const data = JSON.parse(rawData);
+
+	console.log(`found ${data.items.mods.length} items in ${file}`);
+	return data.items.mods.map(parseEntry);
 });
-const allData = await Promise.all(xmlPromises);
-console.log('allData', allData);
-fs.writeFileSync('harvard.json', JSON.stringify(allData.flat(), null, 3));
+
+fs.writeFileSync('harvard.data.json', JSON.stringify(allData.flat(), null, 3));
 
 function cleanString(s) {
 	if (!s || (typeof s !== 'string') | (s.length === 0)) return '';
-	const cleaner = /[^a-zA-Z0-9]+$|^[^a-zA-Z0-9]+/g;
-	return s.replaceAll(cleaner, '').replace(/\s+/g, ' ');
+	return s
+		.replaceAll(/[!@#$%^&*,.:;<=>?_]$/g, '')
+		.replace(/\s+/g, ' ')
+		.trim();
 }
 
-function parseEntry(item) {
+function parseEntry(item, i) {
+	if (DEBUG && i > 5) return;
+
 	let entry = {};
 
-	const titleInfo = item['mods:titleInfo'][0];
+	// the title is in the array entry without a type
+	const titleInfo = Array.isArray(item.titleInfo)
+		? item.titleInfo.find((ti) => !ti.type)
+		: item.titleInfo;
+
 	entry.title = cleanString(
-		`${titleInfo['mods:nonSort'] ? titleInfo['mods:nonSort'][0] : ''} ${
-			titleInfo['mods:title'][0]
-		}`
+		`${cleanString(titleInfo.nonSort)} ${cleanString(titleInfo.title)}`
 	);
-	entry.subtitle = cleanString(
-		titleInfo['mods:subTitle']
-			? titleInfo['mods:subTitle'][0].trim().replace(/  +/g, ' ')
-			: ''
+	entry.subtitle = cleanString(titleInfo.subTitle);
+
+	const authors = Array.isArray(item.name)
+		? item.name.map(extractAuthorData)
+		: item.name && item.name.namePart // name not an array
+		? [extractAuthorData(item.name)]
+		: [];
+	// remove empty objects
+	entry.authors = authors.filter((el) => Object.keys(el).length > 0);
+
+	entry.lcCallNumber = cleanString(
+		extractClassification(item.classification, 'lcc')
 	);
-	// replace strings of >1 whitespace with space
 
-	entry.authors = item['mods:name']
-		? item['mods:name'].map((nm) => {
-				return {
-					name: cleanString(nm['mods:namePart'][0].toString()),
-					roleTerm: nm['mods:role']
-						? cleanString(nm['mods:role'][0]['mods:roleTerm'][0]['_'])
-						: '',
-				};
-		  })
-		: [];
+	entry.ddCallNumber = cleanString(
+		extractClassification(item.classification, 'ddc')
+	);
 
-	const classificationInfo = item['mods:classification']
-		? item['mods:classification']
-		: [];
-	const lcInfo = classificationInfo.find((ci) => ci['$'].authority === 'lcc');
-	entry.lcCallNumber = lcInfo ? cleanString(lcInfo['_']) : '';
+	entry.isbn = cleanString(extractIdentifier(item.identifier, 'isbn'));
 
-	const ddInfo = classificationInfo.find((ci) => ci['$'].authority === 'ddc');
+	entry.abstract = item.abstract ? cleanString(item.abstract.text) : '';
 
-	entry.ddCallNumber = ddInfo ? cleanString(ddInfo['_']) : '';
-
-	const isbnInfo = item['mods:identifier']
-		? item['mods:identifier'].find((ii) => ii['$'] && ii['$'].type === 'isbn')
-		: null;
-	entry.isbn = isbnInfo ? cleanString(isbnInfo['_']) : '';
-
-	entry.abstract = item['mods:abstract']
-		? cleanString(item['mods:abstract'][0]['_'])
-		: '';
-	entry.genres = !item['mods:genre']
-		? []
-		: [
-				...new Set( // dedupe the array
-					item['mods:genre']
-						.filter(
-							(gn) =>
-								!gn['_']
-									? ''
-									: /[A-Z]/.test(gn['_'][0]) && // first char is capital letter
-									  /[A-Z]/i.test(gn['_'][gn['_'].length - 1]) // last char is a letter (case insensitive)
-						)
-						.map((gn) => cleanString(gn['_']))
-				),
-		  ];
-
-	// originInfo may have many entries, some may not have publishers
-	// find the first entry with a publisher and use that publisher
-	// if that entry has a dateIssued, use it, otherwise use date from dateIssued[0]
-
-	entry.publisher = item['mods:originInfo'][0]['mods:publisher']
-		? cleanString(item['mods:originInfo'][0]['mods:publisher'][0])
-		: '';
-	entry.publishedDate = item['mods:originInfo'][0]['mods:dateIssued']
-		? cleanString(
-				item['mods:originInfo'][0]['mods:dateIssued'][0]['_'] ||
-					item['mods:originInfo'][0]['mods:dateIssued'][0]
+	const rawSubjects = Array.isArray(item.subject)
+		? item.subject.filter(
+				(su) =>
+					su.topic &&
+					su.authority &&
+					'lcsh | fast'.includes(su.authority.toLowerCase())
 		  )
-		: '';
+		: [item.subject];
+	entry.subjects = extractSubjects(rawSubjects);
 
-	// language -- item['mods:language'][0]['mods:languageTerm'] map to get array of ['_']; reduce to get longest element
-	// toc -- item['mods:tableOfContents].join(' | ')
-	//console.log(entry);
+	entry.publisherName = cleanString(
+		getOriginKey(item.originInfo, 'publisher')
+	);
+
+	entry.publishedDate = cleanString(
+		getOriginKey(item.originInfo, 'dateIssued')
+	);
+
 	return entry;
 }
-// return result;
-// 	});
-// })
+
+function extractSubjects(rawSubjects) {
+	return rawSubjects.map((sh) => {
+		if (!sh) return [];
+		// must have topic to be included
+		let subject = cleanString(
+			Array.isArray(sh.topic) ? sh.topic.join(' — ') : sh.topic
+		).replaceAll('—', ' — ');
+		// add genre if present
+		if (sh.genre)
+			subject = `${subject}${subject.length > 0 ? ' — ' : ''}${cleanString(
+				sh.genre
+			)}`;
+		// add geographic if present
+		if (sh.geographic)
+			subject = `${subject}${subject.length > 0 ? ' — ' : ''}${cleanString(
+				sh.geographic
+			)}`;
+		// add temporal if present
+		if (sh.temporal)
+			subject = `${subject}${subject.length > 0 ? ' — ' : ''}${cleanString(
+				sh.temporal
+			)}`;
+		return cleanString(subject);
+	});
+}
+
+function extractAuthorData(name) {
+	const authorName = extractAuthorName(name.namePart);
+	return /\w+/.test(authorName)
+		? {
+				authorName: cleanString(authorName),
+				roleTerm: cleanString(extractAuthorRoleTerm(name.role)),
+		  }
+		: {};
+}
+
+function extractAuthorName(namePart) {
+	return Array.isArray(namePart)
+		? namePart.find((np) => typeof np === 'string')
+		: namePart;
+}
+
+function extractAuthorRoleTerm(role) {
+	const roleInfo = Array.isArray(role)
+		? role.find((r) => r.roleTerm.type.toLowerCase() === 'text')
+		: role && role.roleTerm
+		? role.roleTerm
+		: null;
+	return roleInfo ? roleInfo.text : '';
+}
+
+function extractClassification(classification, type) {
+	if (!classification) return '';
+	const clToUse = Array.isArray(classification)
+		? classification.find(
+				(cl) => cl.authority && cl.authority.toLowerCase() === type
+		  )
+		: classification.authority &&
+		  classification.authority.toLowerCase() === type
+		? classification
+		: null;
+
+	return clToUse ? clToUse.text : '';
+}
+
+function extractIdentifier(identifier, type) {
+	if (!identifier) return '';
+	const idToUse = Array.isArray(identifier)
+		? identifier.find((id) => id.type && id.type.toLowerCase() === type)
+		: identifier.type && identifier.type.toLowerCase() === type
+		? identifier
+		: null;
+
+	return idToUse ? idToUse.text : '';
+}
+
+function getOriginKey(origin, key) {
+	if (!origin) return '';
+
+	const originToUse = Array.isArray(origin)
+		? origin.find(
+				(orig) =>
+					orig[key] &&
+					typeof orig[key] === 'string' &&
+					/\w+/.test(orig[key])
+		  )
+		: origin;
+
+	return originToUse
+		? Array.isArray(originToUse[key])
+			? originToUse[key][0]
+			: originToUse[key]
+		: '';
+}

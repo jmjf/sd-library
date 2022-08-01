@@ -1,0 +1,477 @@
+{
+	"pagination": {
+		"maxPageableSet": "100000",
+		"numFound": 102,
+		"query": "subject.topic=translations and japanese literature&languageCode=eng",
+		"limit": 10,
+		"start": 0
+	},
+	"items": {
+		"dc": [
+			{
+				"title": "Poetry & prose in Chinese by Japanese writers of the later period",
+				"contributor": "Watson, Burton , 1925-2017",
+				"type": ["Text", "bibliography"],
+				"publisher": "Columbia University Press",
+				"language": ["eng English", "chi"],
+				"format": ["print", "189 p. ; 22 cm."],
+				"description": [
+					"translated by Burton Watson.",
+					"\"Translations from the Oriental classics.\"",
+					"Includes index.",
+					"Bibliography: p. 20-22."
+				],
+				"subject": [
+					"Chinese literature--Translations into English",
+					"Japanese literature",
+					"Japanese literature--Translations into English",
+					"Chinese literature--Japanese authors--History and criticism",
+					"English literature--Translations, Chinese",
+					"English literature--Translations from Japanese",
+					"Chinese literature--History and criticism",
+					"Chinese literature--Japan--History and criticism",
+					"PL2658.E1 P62",
+					"895.1/08/001"
+				],
+				"coverage": "Japan",
+				"relation": [
+					"Japanese literature in Chinese ; v.2",
+					"https://id.lib.harvard.edu/alma/990063314310203941/catalog"
+				],
+				"identifier": [
+					"isbn: 0231041462",
+					"lccn: ^^^75015896^",
+					"oclc: 3782576",
+					"librarycloud: 990063314310203941"
+				]
+			},
+			{
+				"title": [
+					"Songs to make the dust dance: the Ryōjin hishō of twelfth-century Japan",
+					"Songs to make the dust dance"
+				],
+				"creator": "Kim, Yung-Hee.",
+				"type": ["Text", "bibliography", "text", "Electronic books"],
+				"publisher": "University of California Press",
+				"language": "eng English",
+				"format": [
+					"electronic resource",
+					"electronic resource",
+					"remote",
+					"1 online resource (xviii, 222 p. )",
+					"computer",
+					"online resource"
+				],
+				"description": [
+					"Yung-Hee Kim.",
+					"Bibliographic Level Mode of Issuance: Monograph",
+					"Includes bibliographical references (p. 193-201) and indexes.",
+					"English"
+				],
+				"subject": [
+					"Japanese poetry--History and criticism",
+					"Japanese poetry--Heian period, 794-1185--History and criticism",
+					"Songs, Japanese--History and criticism",
+					"Ballads, Japanese--History and criticism",
+					"Japanese poetry--Translations into English",
+					"Japanese poetry--Heian period, 794-1185--Translations into English",
+					"Japanese poetry--History and criticism",
+					"Japanese poetry--History and criticism--Heian period, 794-1185",
+					"Songs, Japanese--History and criticism",
+					"Songs, Japanese--History and criticism--Heian period, 794-1185",
+					"Ballads, Japanese--History and criticism",
+					"Japanese poetry--Translations into English",
+					"East Asian Languages & Literatures",
+					"Languages & Literatures",
+					"PL787.R943 K86 1994",
+					"PL787.R943 K86 1993",
+					"895.6/11409"
+				],
+				"coverage": [
+					"Heian period, 794-1185",
+					"Heian period, 794-1185",
+					"Heian period, 794-1185",
+					"Heian period, 794-1185"
+				],
+				"identifier": [
+					"isbn: 0-585-10441-7",
+					"lccn: 93010237",
+					"librarycloud: 99154297556603941"
+				],
+				"relation": "https://id.lib.harvard.edu/alma/99154297556603941/catalog"
+			},
+			{
+				"title": "The ends of meter in modern Japanese poetry: translation and form",
+				"creator": "Mehl, Scott (author.)",
+				"type": [
+					"Text",
+					"bibliography",
+					"text",
+					"Criticism, interpretation, etc.",
+					"History"
+				],
+				"publisher": "Cornell East Asia Series, an imprint of Cornell University Press,",
+				"language": "eng English",
+				"format": [
+					"print",
+					"xvi, 235 pages : facsimiles ; 24 cm.",
+					"unmediated",
+					"volume"
+				],
+				"description": [
+					"Scott Mehl.",
+					"Includes bibliographical references and index."
+				],
+				"subject": [
+					null,
+					"Japanese poetry--History and criticism",
+					"Japanese poetry--Meiji period, 1868-1912--History and criticism",
+					"Japanese literature--Foreign influences--History",
+					"Japanese literature--Foreign influences--History--19th century",
+					"Translating and interpreting--History",
+					"Translating and interpreting--Japan--History--19th century",
+					"Littérature japonaise--Influence étrangère--Histoire",
+					"Littérature japonaise--Influence étrangère--Histoire--19e siècle",
+					"Japanese literature--Foreign influences",
+					"Japanese poetry--Meiji period",
+					"Translating and interpreting",
+					null,
+					"PL733.6 .M44 2021",
+					"895.61/4209"
+				],
+				"coverage": [
+					"1800-1912",
+					"Meiji period, 1868-1912",
+					"19th century",
+					"Japan",
+					"19th century",
+					"19e siècle",
+					"Japan"
+				],
+				"relation": [
+					"Cornell East Asia series ; number 210",
+					"https://id.lib.harvard.edu/alma/99156333855303941/catalog"
+				],
+				"identifier": [
+					"isbn: 9781501761171",
+					"isbn: 150176117X",
+					"isbn: 9781501761195",
+					"isbn: 9781501761188",
+					"oclc: 1289275773",
+					"librarycloud: 99156333855303941"
+				]
+			},
+			{
+				"title": [
+					"Worlding Sei Shônagon: The pillow book in translation",
+					"Pillow book in translation",
+					"Project Muse UPCC books"
+				],
+				"creator": "Henitiuk, Valerie",
+				"type": ["Text", "bibliography", "biography"],
+				"publisher": "University of Ottawa Press",
+				"language": ["eng English", "mul"],
+				"format": ["print", "ix, 312 p. : col. ill., music ; 21 cm."],
+				"description": [
+					"Contained herein are forty-eight translations1 of what is arguably the single most famous passage in Japanese literature, namely the opening section of The Pillow Book, written around the turn of the eleventh century by a woman we know as Sei Shônagon. The languages represented, in entries dating from 1875 to the present day, are Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, French, German, Italian, Romanian, Russian, Spanish and Turkish; two versions have also been provided in Chinese (with additional versions in modern Japanese appearing in Appendix III). Most of the translations have previously been available only in rare or hard to obtain sources, and are now brought together for the first time in an affordable and readily accessible format.",
+					"Preface -- Acknowledgements -- Introduction -- Sei Shônagon Classical Japanese -- First generation of western translators -- Second generation -- Third generation -- Fourth generation -- Appendix I. Romanization of original and romanization with English gloss -- Appendix II. A selection of book covers from the translations -- Appendix III. A selection of modern Japanese versions -- Bibliographies.",
+					"Valerie Henitiuk.",
+					"Includes bibliographical references.",
+					"Issued also in electronic format.",
+					"Includes text in multiple languages."
+				],
+				"subject": [
+					"Sei Shōnagon , approximately 967-",
+					null,
+					"Translations--History and criticismSei Shōnagon , approximately 967-",
+					"Sei Shōnagon , née ca 967",
+					null,
+					"Traductions--Histoire et critiqueSei Shōnagon , née ca 967",
+					"TranslationsSei Shōnagon , approximately 967-",
+					null,
+					"Japanese literature--History and criticism",
+					"Japanese literature--Heian period, 794-1185--History and criticism",
+					"Women authors, Japanese",
+					"Women authors, Japanese--Heian period, 794-1185",
+					"East and West in literature",
+					"Translating and interpreting--Cross-cultural studies",
+					"Littérature japonaise--Histoire et critique",
+					"Littérature japonaise--794-1185 (Époque de Heian)--Histoire et critique",
+					"Écrivaines japonaises",
+					"Écrivaines japonaises--794-1185 (Époque de Heian)",
+					"Orient et Occident dans la littérature",
+					"Traduction littéraire--Études transculturelles",
+					"PL788.6.A1995 H46 2012",
+					"895.6/81403"
+				],
+				"coverage": [
+					"Heian period, 794-1185",
+					"Heian period, 794-1185",
+					"794-1185 (Époque de Heian)",
+					"794-1185 (Époque de Heian)"
+				],
+				"relation": [
+					"Perspectives on translation",
+					"https://id.lib.harvard.edu/alma/990133365280203941/catalog"
+				],
+				"identifier": [
+					"isbn: 9780776607283",
+					"isbn: 0776607286",
+					"oclc: 791162721",
+					"https://nrs.harvard.edu/urn-3:hul.ebookbatch.PMUSE_batch:muse9780776619798",
+					"librarycloud: 990133365280203941"
+				]
+			},
+			{
+				"title": [
+					"Tales of times now past: sixty-two stories from a medieval Japanese collection",
+					"Konjaku monogatari. Selections. English"
+				],
+				"contributor": [
+					"Ury, Marian (translator.)",
+					"Michigan Publishing (University of Michigan) (issuing body.)"
+				],
+				"type": ["Text", "bibliography", "text", "Electronic books."],
+				"publisher": "University of Michigan Press,",
+				"language": "eng English",
+				"format": [
+					"print",
+					"electronic resource",
+					"remote",
+					"1 online resource (xi, 199 pages) : illustrations.",
+					"computer",
+					"online resource"
+				],
+				"description": [
+					"Marian Ury.",
+					"Originally published: Berkeley : University of California , c1979.",
+					"Includes bibliographical references (pages [24]-25).",
+					"Sponsored by National Endowment for the Humanities"
+				],
+				"subject": [
+					"Folk literature, Japanese--Translations into English",
+					"Japanese literature--Translations into English",
+					"Japanese literature--Heian period, 794-1185--Translations into English",
+					"Buddhist legends--Translations into English",
+					"Social life and customs--Fiction",
+					"PL787.K6 E5 1993",
+					"895.6/3108"
+				],
+				"coverage": ["Heian period, 794-1185", "Japan"],
+				"relation": [
+					"Michigan Classics in Japanese Studies ; no. 9",
+					"https://id.lib.harvard.edu/alma/99155800117903941/catalog"
+				],
+				"identifier": [
+					"isbn: 9780472128112",
+					"isbn: 9780472902118",
+					"isbn: 9780939512614",
+					"doi: 10.3998/mpub.18748",
+					"librarycloud: 99155800117903941"
+				]
+			},
+			{
+				"title": [
+					"Tales of Times Now Past: Sixty-Two Stories from a Medieval Japanese Collection",
+					"Konjaku monogatari. English. Selections"
+				],
+				"contributor": [
+					"Ury, Marian.",
+					"Michigan Publishing (University of Michigan) (issuing body.)"
+				],
+				"type": ["Text", "text", "Electronic books."],
+				"publisher": "Center for Japanese Studies, University of Michigan,",
+				"language": ["eng English", "jpn"],
+				"format": [
+					"electronic resource",
+					"remote",
+					"1 online resource (xi, 199 pages) : illustrations; digital, PDF file(s).",
+					"computer",
+					"online resource"
+				],
+				"rights": "Open Access",
+				"description": [
+					"Marian Ury.",
+					"Originally published: Berkeley : University of California , c1979.",
+					"Includes bibliographical references (p. [24]-25).",
+					"Also available in print form.",
+					"Sponsored by National Endowment for the Humanities",
+					"Mode of access: internet via World Wide Web."
+				],
+				"subject": [
+					"Buddhist legends--Translations into English",
+					"Japanese literature--Translations into English",
+					"Japanese literature--Heian period, 794-1185--Translations into English",
+					"Folk literature, Japanese--Translations into English",
+					"Social life and customs",
+					"PL787.K6 E5 1993",
+					"895.6/3108"
+				],
+				"coverage": ["Heian period, 794-1185", "Japan"],
+				"relation": [
+					"Michigan Classics in Japanese Studies ; no. 9",
+					"https://id.lib.harvard.edu/alma/99155238171903941/catalog"
+				],
+				"identifier": [
+					"isbn: 0-472-12811-6",
+					"isbn: 0-939512-61-0",
+					"doi: 10.3998/mpub.18748",
+					"lccn: 93023945",
+					"oclc: 1184508577",
+					"oclc: 1283856033",
+					"librarycloud: 99155238171903941"
+				]
+			},
+			{
+				"title": [
+					"Nenpyō Ei-Bei bungakushi: honʾyakusho heiki",
+					"Annals of English & American literature"
+				],
+				"creator": "Kasahara, Katsurō , 1938-",
+				"contributor": "Narita, Shigehisa , 1907-1986",
+				"type": ["Text", "bibliography"],
+				"publisher": "Aratake Shuppan",
+				"language": ["jpn Japanese", "eng"],
+				"format": ["print", "380 p. ; 19 cm."],
+				"description": [
+					"Kasahara Katsurō henshū.",
+					"Kanshū: Narita Shigehisa.",
+					"Includes index.",
+					"Includes bibliographical references: (p. ix-x)."
+				],
+				"subject": [
+					"English literature",
+					"English literature--Bibliography",
+					"American literature",
+					"American literature--Bibliography",
+					"English literature--Translations into Japanese",
+					"English literature--Translations into Japanese--Bibliography",
+					"American literature--Translations into Japanese",
+					"American literature--Translations into Japanese--Bibliography",
+					"IgirisubungakuRekishiNenpyō.",
+					"AmerikabungakuRekishiNenpyō."
+				],
+				"identifier": [
+					"oclc: 33570523",
+					"librarycloud: 990082209490203941"
+				],
+				"relation": "https://id.lib.harvard.edu/alma/990082209490203941/catalog"
+			},
+			{
+				"title": [
+					"Honʾyaku no chihei: honʾyakusha to shite no Meiji no sakka",
+					"翻訳の地平: 翻訳者としての明治の作家"
+				],
+				"creator": "Akiyama, Yūzō , 1931-",
+				"type": "Text",
+				"publisher": ["Kanrin Shobō", "翰林書房,"],
+				"language": ["jpn Japanese", "eng", "fre"],
+				"format": ["print", "293, ix p. ; 20 cm."],
+				"description": [
+					"Akiyama Yūzō.",
+					"Includes index.",
+					"Some texts in English and French included.",
+					"秋山勇造."
+				],
+				"subject": [
+					"Literature--Translations into Japanese--History and criticism",
+					"Japanese literature--Translating",
+					"Authors, Japanese",
+					"Authors, Japanese--Meiji period, 1868-1912",
+					"PL720.6 A44 1995x"
+				],
+				"coverage": "Meiji period, 1868-1912",
+				"contributor": "秋山勇造 , 1931-",
+				"identifier": [
+					"4906424791 :",
+					"lccn: 97460370",
+					"oclc: 34897124",
+					"librarycloud: 990084084700203941"
+				],
+				"relation": "https://id.lib.harvard.edu/alma/990084084700203941/catalog"
+			},
+			{
+				"title": "Realizing Autonomy: Practice and Reflection in Language Education Contexts",
+				"creator": "Irie, Kay. (author.)",
+				"contributor": "Stewart, Alison. (author.)",
+				"type": ["Text", "government publication", "text"],
+				"publisher": "Palgrave Macmillan UK :",
+				"language": "eng English",
+				"format": [
+					"electronic resource",
+					"electronic resource",
+					"remote",
+					"1 online resource (303 p.)",
+					"computer",
+					"online resource"
+				],
+				"description": [
+					"Realizing Autonomy: Practice and Reflection in Language Education Contexts presents critical practitioner research into innovative approaches to language learner autonomy. Writing about experiences in a range of widely differing contexts, the authors offer fresh insights and perspectives on the challenges and contradictions of learner autonomy.",
+					"Cover; Half-title; Title; Copyright; Contents; List of Tables; List of Figures; Acknowledgments; Foreword; Notes on Contributors; 1 Realizing Autonomy: Contradictions in Practice and Context; Part I Goals and Frameworks; 2 Learner Autonomy for International Students: Evolution of a University JSL Program; 3 Experimenting with Autonomy: Learners Teaching Learners; 4 Introducing a Negotiated Curriculum; 5 Creating Space for Learning: Language Learning Materials and Autonomy; Part II Strategies and Scaffolding; 6 Learner Development Through Listening Strategy Training",
+					"7 Transformative Learning in Action: Insights from the Practice of Journal Writing8 Scaffolding Economics Language and Learning with Case Studies; 9 The Truth of the Tale: Reconceptualizing Authority in Content-Based Teaching; Part III Collaborative Learning; 10 Creating a Writing Center: Autonomy, Interdependence, and Identity; 11 Who, What, How? Autonomy and English through Drama; 12 Positive Interdependence for Teacher and Learner Autonomy: The Case of the CARTA Program; 13 Parallel Blogging: Explorations in Teacher and Learner Autonomy; Part IV Problems and Possibilities",
+					"14 \"Nothing to Worry About\": Anxiety-reduction Strategies in Harry Potter's Class and Mine15 Responding to Video Journals: Rethinking the Role of Feedback for Learner Autonomy; 16 Listen to Students' Stories: Promoting Learner Autonomy through Out-of-Class Listening Activities; 17 Practical Frustration Busters for Learner and Teacher Autonomy; Afterword: Dogme for Beginners - The Autonomy of the Group; Index",
+					"by Kay Irie, Alison Stewart.",
+					"Description based upon print version of record.",
+					"Includes bibliographical references and index.",
+					"English"
+				],
+				"subject": [
+					"Language and languages—Study and teaching",
+					"Linguistics",
+					"Language and education",
+					"Literature",
+					"Japanese language",
+					"Literature—Translations",
+					"Language Teaching",
+					"Linguistics, general",
+					"Language Education",
+					"Literature, general",
+					"Japanese",
+					"Translation Studies",
+					"P51-P59.4",
+					"418.0071 418.0071052",
+					"LAN009050 EDU005000 LAN009000 LAN023000 LAN020000 FOR014000"
+				],
+				"identifier": [
+					"isbn: 1-280-68126-8",
+					"isbn: 9786613658203",
+					"isbn: 0-230-35848-9",
+					"doi: 10.1057/9780230358485",
+					"oclc: 795120151",
+					"librarycloud: 99154297962703941"
+				],
+				"relation": "https://id.lib.harvard.edu/alma/99154297962703941/catalog"
+			},
+			{
+				"title": "Aspects of science fiction since the 1980s: China, Italy, Japan, Korea",
+				"type": ["Text", "abstract or summary", "text"],
+				"publisher": "Nuova Trauben,",
+				"language": ["ita Italian", "eng", "eng", "chi"],
+				"format": ["print", "176 pages ; 21 cm.", "unmediated", "volume"],
+				"description": [
+					"texts by Lorenzo Andolfatto [and seven others].",
+					"Includes bibliographical references.",
+					"Essays in English with one essay in Italian with abstract in English; includes two short stories in English translation from Chinese."
+				],
+				"subject": [
+					"Science fiction, Chinese--History and criticism",
+					"Science fiction, Japanese--History and criticism",
+					"Science fiction, Korean--History and criticism",
+					"Chinese literature--Translations into Italian--History and criticism",
+					"Japanese literature--Translations into Italian--History and criticism",
+					"PL2275.S34 A87 2015"
+				],
+				"relation": [
+					"Quaderni di cultura ; 12",
+					"Eastern and Western interactions in some Italian, Japanese and Korean science fiction works",
+					"https://id.lib.harvard.edu/alma/990143468560203941/catalog"
+				],
+				"identifier": [
+					"9788899312015 :",
+					"oclc: 905087873",
+					"librarycloud: 990143468560203941"
+				]
+			}
+		]
+	}
+}
