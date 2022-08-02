@@ -1,5 +1,6 @@
 import fs from 'fs';
 import glob from 'glob';
+import * as uuid from 'uuid';
 
 const DEBUG = false;
 
@@ -32,7 +33,10 @@ const allData = files.map((file) => {
 	return data.items.mods.map(parseEntry);
 });
 
-fs.writeFileSync('harvard.data.json', JSON.stringify(allData.flat(), null, 3));
+fs.writeFileSync(
+	'harvard.data.json',
+	JSON.stringify({ resources: allData.flat() })
+);
 
 function cleanString(s) {
 	if (!s || (typeof s !== 'string') | (s.length === 0)) return '';
@@ -95,6 +99,8 @@ function parseEntry(item, i) {
 		getOriginKey(item.originInfo, 'dateIssued')
 	);
 
+	entry.resourceId = uuid.v4();
+
 	return entry;
 }
 
@@ -126,7 +132,7 @@ function extractSubjects(rawSubjects) {
 
 function extractAuthorData(name) {
 	const authorName = extractAuthorName(name.namePart);
-	return /\w+/.test(authorName)
+	return /[A-Za-z]+/.test(authorName)
 		? {
 				authorName: cleanString(authorName),
 				roleTerm: cleanString(extractAuthorRoleTerm(name.role)),
