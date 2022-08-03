@@ -19,7 +19,7 @@ describe('ResourceSearchResultsPage', () => {
 	test('when a resource in the list is clicked, it shows the resource id for that resource', () => {
 		// Arrange
 		const resourceIdRegEx = new RegExp(resources[0].resourceId);
-		const targetResourceTitle = resources[0].resourceTitle;
+		const targetResourceTitle = resources[0].title;
 
 		// Act
 		render(<ResourceSearchResultsPage resources={resources} />);
@@ -33,8 +33,8 @@ describe('ResourceSearchResultsPage', () => {
 
 	test('when a second resource in the list is clicked, it shows the resource id for that resource', () => {
 		// Arrange
-		const targetResourceTitle1 = resources[0].resourceTitle;
-		const targetResourceTitle2 = resources[3].resourceTitle;
+		const targetResourceTitle1 = resources[0].title;
+		const targetResourceTitle2 = resources[3].title;
 		const resourceIdRegEx = new RegExp(resources[3].resourceId);
 
 		// Act

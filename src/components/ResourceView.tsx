@@ -1,4 +1,4 @@
-import { Resource, ResourceTypeValues } from '../models/Resource';
+import { Resource } from '../models/Resource';
 import { formatDate_MMM_YYYY } from '../utils';
 
 interface ResourceViewProps {
@@ -8,35 +8,36 @@ interface ResourceViewProps {
 const ResourceView = ({ resource }: ResourceViewProps) => {
 	const {
 		resourceId,
-		resourceTypeCode,
-		resourceTitle,
-		lendableFlag,
+		title,
 		publishedDate,
-		book,
-		periodical,
+		publisherName,
+		authors,
+		subjects,
+		isbn,
+		lcCallNumber,
+		abstract,
 	} = resource;
 
 	return (
 		<div role="resource-detail">
-			<h3>{resourceTitle}</h3>
-			<p>Resource Type Code: {resourceTypeCode}</p>
-			<p>Lendable?: {lendableFlag ? 'Yes' : 'No'}</p>
-			<p>Published: {formatDate_MMM_YYYY(publishedDate)}</p>
-			{resourceTypeCode === ResourceTypeValues.book ? (
-				<div>
-					<p>Author: {book?.authorName}</p>
-					<p>ISBN: {book?.ISBN}</p>
-				</div>
-			) : (
-				<div>
-					<p>
-						Volume {periodical?.volumeNumber}, Issue
-						{periodical?.issueNumber}
-					</p>
-					<p>ISSN: {periodical?.ISSN}</p>
-				</div>
-			)}
+			<h3>{title}</h3>
+			<p>Author: {authors ? authors[0].authorName : 'none listed'}</p>
+			<p>ISBN: {isbn}</p>
+			<p>LC Call Number: {lcCallNumber}</p>
+			<p>
+				{publisherName ? `${publisherName} ` : ''}
+				{formatDate_MMM_YYYY(publishedDate)}
+			</p>
 			<p>Resource Id: {resourceId}</p>
+			{subjects && subjects.length > 0 && subjects[0].length > 0 ? (
+				<div>
+					<p>Subjects:</p>
+					{subjects.map((subject) => (
+						<p key={subject}>{subject}</p>
+					))}
+				</div>
+			) : null}
+			{abstract ? <p>Abstract: {abstract}</p> : null}
 			<br />
 		</div>
 	);
