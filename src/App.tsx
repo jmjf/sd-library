@@ -1,11 +1,11 @@
-import ListResources from './components/ListResources';
+import ResourceSearchResultsPage from './components/ResourceSearchResultsPage';
 
 import { resources } from './temp/resources';
 
 function App() {
 	return (
 		<div className="App">
-			<ListResources resources={resources} />
+			<ResourceSearchResultsPage resources={resources} />
 		</div>
 	);
 }

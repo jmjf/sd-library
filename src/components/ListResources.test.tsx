@@ -1,15 +1,15 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import ListResources from './ListResources';
+import ResourceSearchResultsPage from './ResourceSearchResultsPage';
 import { resources } from '../temp/resources';
 
-describe('ListResources', () => {
+describe('ResourceSearchResultsPage', () => {
 	test('when first rendered, it shows a list of resources and no resource detail', () => {
 		// Arrange
 
 		// Act
-		render(<ListResources resources={resources} />);
+		render(<ResourceSearchResultsPage resources={resources} />);
 
 		// Assert
 		expect(screen.getByText('Resource Title')).toBeInTheDocument();
@@ -22,7 +22,7 @@ describe('ListResources', () => {
 		const targetResourceTitle = resources[0].resourceTitle;
 
 		// Act
-		render(<ListResources resources={resources} />);
+		render(<ResourceSearchResultsPage resources={resources} />);
 		fireEvent.click(screen.getByText(targetResourceTitle));
 
 		// Assert
@@ -38,7 +38,7 @@ describe('ListResources', () => {
 		const resourceIdRegEx = new RegExp(resources[3].resourceId);
 
 		// Act
-		render(<ListResources resources={resources} />);
+		render(<ResourceSearchResultsPage resources={resources} />);
 		fireEvent.click(screen.getByText(targetResourceTitle1));
 		fireEvent.click(screen.getByText(targetResourceTitle2));
 

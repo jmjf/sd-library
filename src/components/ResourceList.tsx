@@ -3,15 +3,15 @@ import { BaseSyntheticEvent, Dispatch, SetStateAction } from 'react';
 import { Resource } from '../models/Resource';
 import { booleanToYesNo, formatDate_MMM_YYYY } from '../utils';
 
-interface ResourcesListProps {
+interface ResourceListProps {
 	resources: Resource[];
 	setSelectedResourceId: Dispatch<SetStateAction<string>>;
 }
 
-const ResourcesList = ({
+const ResourceList = ({
 	resources,
 	setSelectedResourceId,
-}: ResourcesListProps) => {
+}: ResourceListProps) => {
 	const handleClick = (resourceId: string, ev: BaseSyntheticEvent) => {
 		ev.preventDefault();
 		setSelectedResourceId(resourceId);
@@ -47,4 +47,4 @@ const ResourcesList = ({
 	);
 };
 
-export default ResourcesList;
+export default ResourceList;

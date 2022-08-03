@@ -1,11 +1,11 @@
 import { Resource, ResourceTypeValues } from '../models/Resource';
 import { formatDate_MMM_YYYY } from '../utils';
 
-interface ViewResourceProps {
+interface ResourceViewProps {
 	resource: Resource;
 }
 
-const ViewResource = ({ resource }: ViewResourceProps) => {
+const ResourceView = ({ resource }: ResourceViewProps) => {
 	const {
 		resourceId,
 		resourceTypeCode,
@@ -41,4 +41,4 @@ const ViewResource = ({ resource }: ViewResourceProps) => {
 		</div>
 	);
 };
-export default ViewResource;
+export default ResourceView;
