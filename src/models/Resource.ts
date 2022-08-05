@@ -1,71 +1,41 @@
 type ResourceId = string;
 
-export const ResourceTypeValues = {
-	book: 'book',
-	periodical: 'periodical',
-} as const;
-// as const prevents changing or adding values;
-
-export type ResourceType =
-	typeof ResourceTypeValues[keyof typeof ResourceTypeValues];
-
-export const validResourceTypes = Object.values(ResourceTypeValues);
-
 export interface Resource {
-	resourceId: ResourceId;
-	resourceTypeCode: ResourceType;
-	callNumber: CallNumber;
-	lendableFlag: boolean;
-	resourceTitle: string;
-	publisherName: string; // relationship in the future
-	publishedDate: Date;
-	book?: Book;
-	periodical?: Periodical;
+	resourceId: string;
+	title: string;
+	subtitle?: string;
+	authors?: Author[];
+	lcCallNumber?: string;
+	ddCallNumber?: string;
+	isbn?: string;
+	abstract?: string;
+	subjects?: string[];
+	publisherName?: string;
+	publishedDate?: string | Date;
 }
 
-export interface Book {
-	resourceId: ResourceId;
+export interface Author {
 	authorName: string;
-	seriesName: string;
-	volumeNumber: number;
-	ISBN: string;
+	roleTerm: RoleTermType;
 }
 
-export interface Periodical {
-	resourceId: ResourceId;
-	volumeNumber: number;
-	issueNumber: number;
-	ISSN: string;
-}
+export type RoleTermType = string;
 
-// Call numbers
-export const CallNumberTypeValues = {
-	LC: 'lc',
-	Dewey: 'dewey',
-} as const;
-// as const prevents changing or adding values;
+// Keeping section below because I may convert it to a roleTerms type replacing string above
 
-export type CallNumberType =
-	typeof CallNumberTypeValues[keyof typeof CallNumberTypeValues];
+// // Role terms
+// export const RoleTermTypeValues = {
+// 	Creator: 'creator',
+// 	Author: 'author',
+//    None: '',
+//    Translator: 'translator',
+//    IntroWriter: 'writer of introduction',
+//    Publisher: 'publisher', // why would they put a publisher in the authors data?
+//    Illustrator: 'illustrator'
+// } as const;
+// // as const prevents changing or adding values;
 
-export const validCallNumberTypes = Object.values(CallNumberTypeValues);
+// export type RoleTermType =
+// 	typeof RoleTermTypeValues[keyof typeof RoleTermTypeValues];
 
-export interface CallNumber {
-	callNumberType: CallNumberType;
-	locationCode?: string; // REF, Juv, etc.; values TBD, so leave it like this for now
-	lcCallNumber?: LCCallNumber;
-	ddCallNumber?: DDCallNumber;
-}
-
-export interface LCCallNumber {
-	subjectCode: string;
-	classificationNumber: number;
-	cutterNumber: string;
-	publicationYear?: number;
-	copyNumber?: number;
-}
-
-export interface DDCallNumber {
-	callNumber: string;
-	cutterNumber: string;
-}
+// export const validRoleTermTypes = Object.values(RoleTermTypeValues);

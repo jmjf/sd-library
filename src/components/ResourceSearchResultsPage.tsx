@@ -1,15 +1,17 @@
-import ViewResource from './ViewResource';
+import ResourceView from './ResourceView';
+import ResourceList from './ResourceList';
+
 import { Resource } from '../models/Resource';
 import { useState } from 'react';
-
-import ResourcesList from './ResourcesList';
 import { dateAsDate } from '../utils';
 
-interface ListResourcesProps {
+interface ResourceSearchResultsPageProps {
 	resources: Resource[];
 }
 
-const ListResources = ({ resources }: ListResourcesProps) => {
+const ResourceSearchResultsPage = ({
+	resources,
+}: ResourceSearchResultsPageProps) => {
 	const [selectedResourceId, setSelectedResourceId] = useState('');
 
 	const selectedResource = resources.find(
@@ -18,12 +20,12 @@ const ListResources = ({ resources }: ListResourcesProps) => {
 
 	return (
 		<section id="resources">
-			<ResourcesList
+			<ResourceList
 				resources={resources}
 				setSelectedResourceId={setSelectedResourceId}
 			/>
 			{selectedResource ? (
-				<ViewResource
+				<ResourceView
 					resource={{
 						...selectedResource,
 						publishedDate: dateAsDate(selectedResource.publishedDate),
@@ -34,4 +36,4 @@ const ListResources = ({ resources }: ListResourcesProps) => {
 	);
 };
 
-export default ListResources;
+export default ResourceSearchResultsPage;

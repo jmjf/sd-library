@@ -1,0 +1,2128 @@
+{
+	"pagination": {
+		"maxPageableSet": "100000",
+		"numFound": 102,
+		"query": "subject.topic=translations and japanese literature&languageCode=eng",
+		"limit": 10,
+		"start": 0
+	},
+	"items": {
+		"mods": [
+			{
+				"titleInfo": {
+					"title": "Poetry & prose in Chinese by Japanese writers of the later period"
+				},
+				"name": {
+					"@type": "personal",
+					"namePart": [
+						"Watson, Burton",
+						{ "@type": "date", "#text": "1925-2017" }
+					]
+				},
+				"typeOfResource": "text",
+				"genre": { "@authority": "marcgt", "#text": "bibliography" },
+				"originInfo": {
+					"place": [
+						{
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "nyu"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "New York (State)"
+								}
+							]
+						},
+						{ "placeTerm": { "@type": "text", "#text": "New York" } }
+					],
+					"publisher": "Columbia University Press",
+					"dateIssued": "1976",
+					"issuance": "monographic"
+				},
+				"language": [
+					{
+						"languageTerm": [
+							{
+								"@authority": "iso639-2b",
+								"@type": "code",
+								"#text": "eng"
+							},
+							{
+								"@authority": "iso639-2b",
+								"@type": "text",
+								"#text": "English"
+							}
+						]
+					},
+					{
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "chi"
+						}
+					}
+				],
+				"physicalDescription": {
+					"form": { "@authority": "marcform", "#text": "print" },
+					"extent": "189 p. ; 22 cm."
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "translated by Burton Watson."
+					},
+					"\"Translations from the Oriental classics.\"",
+					"Includes index.",
+					{ "@type": "bibliography", "#text": "Bibliography: p. 20-22." }
+				],
+				"subject": [
+					{
+						"geographicCode": {
+							"@authority": "marcgac",
+							"#text": "a-ja---"
+						}
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Chinese literature", "Translations into English"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": "Japanese literature",
+						"genre": "Translations into English"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Chinese literature",
+							"Japanese authors",
+							"History and criticism"
+						]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["English literature", "Translations, Chinese"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["English literature", "Translations from Japanese"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Chinese literature", "History and criticism"],
+						"geographic": "Japan"
+					}
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "PL2658.E1 P62" },
+					{ "@authority": "ddc", "#text": "895.1/08/001" }
+				],
+				"relatedItem": [
+					{
+						"titleInfo": {
+							"title": "Japanese literature in Chinese ; v.2"
+						}
+					},
+					{
+						"@type": "series",
+						"titleInfo": {
+							"title": "Japanese literature in Chinese ; v.2"
+						}
+					},
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/990063314310203941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "0231041462" },
+					{ "@type": "lccn", "#text": "^^^75015896^" },
+					{ "@type": "oclc", "#text": "3782576" }
+				],
+				"location": [
+					{
+						"physicalLocation": {
+							"@valueURI": "http://id.loc.gov/rwo/agents/no2014094889",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Widener Library, Harvard University"
+						},
+						"shelfLocator": "Ch 305.6 vol.2"
+					},
+					{
+						"physicalLocation": {
+							"@valueURI": "http://isni.org/isni/0000000121790804",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Harvard-Yenching Library, Harvard University"
+						},
+						"shelfLocator": "PL2658.E1 P62"
+					},
+					null,
+					null
+				],
+				"extension": [
+					{
+						"librarycloud": {
+							"HarvardRepositories": {
+								"HarvardRepository": ["Harvard-Yenching", "Widener"]
+							},
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/990063314310203941",
+							"priorrecordids": {
+								"recordIdentifier": {
+									"@source": "MH:ALEPH",
+									"#text": "006331431"
+								}
+							},
+							"processingDate": "2022-01-30T06:11Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "DVP"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "780405" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20020606"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "990063314310203941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)"
+				}
+			},
+			{
+				"titleInfo": [
+					{
+						"title": "Songs to make the dust dance",
+						"subTitle": "the Ryōjin hishō of twelfth-century Japan"
+					},
+					{
+						"@type": "alternative",
+						"title": "Songs to make the dust dance"
+					}
+				],
+				"name": {
+					"@type": "personal",
+					"namePart": "Kim, Yung-Hee.",
+					"role": { "roleTerm": { "@type": "text", "#text": "creator" } }
+				},
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "marcgt", "#text": "bibliography" },
+					"text",
+					{ "@authority": "marcgt", "#text": "Electronic books" }
+				],
+				"originInfo": {
+					"place": [
+						{
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "cau"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "California"
+								}
+							]
+						},
+						{ "placeTerm": { "@type": "text", "#text": "Berkeley" } }
+					],
+					"publisher": "University of California Press",
+					"dateIssued": [
+						"c1994",
+						{ "@encoding": "marc", "#text": "1994" }
+					],
+					"issuance": "monographic"
+				},
+				"language": {
+					"languageTerm": [
+						{
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						},
+						{
+							"@authority": "iso639-2b",
+							"@type": "text",
+							"#text": "English"
+						}
+					]
+				},
+				"physicalDescription": {
+					"form": [
+						{ "@authority": "gmd", "#text": "electronic resource" },
+						{
+							"@authority": "marccategory",
+							"#text": "electronic resource"
+						},
+						{ "@authority": "marcsmd", "#text": "remote" },
+						{ "@type": "media", "@authority": "", "#text": "computer" },
+						{
+							"@type": "carrier",
+							"@authority": "",
+							"#text": "online resource"
+						}
+					],
+					"extent": "1 online resource (xviii, 222 p. )"
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "Yung-Hee Kim."
+					},
+					"Bibliographic Level Mode of Issuance: Monograph",
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references (p. 193-201) and indexes."
+					},
+					{ "@type": "language", "#text": "English" }
+				],
+				"subject": [
+					{
+						"geographicCode": {
+							"@authority": "marcgac",
+							"#text": "a-ja---"
+						}
+					},
+					{
+						"@authority": "lcsh",
+						"titleInfo": { "title": "Ryōjin hishō" }
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese poetry", "History and criticism"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Songs, Japanese", "History and criticism"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Ballads, Japanese", "History and criticism"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese poetry", "Translations into English"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese poetry", "History and criticism"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Songs, Japanese", "History and criticism"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Ballads, Japanese", "History and criticism"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese poetry", "Translations into English"]
+					},
+					{
+						"@authority": "HILCC",
+						"topic": "East Asian Languages & Literatures"
+					},
+					{ "@authority": "HILCC", "topic": "Languages & Literatures" }
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "PL787.R943 K86 1994" },
+					{ "@authority": "lcc", "#text": "PL787.R943 K86 1993" },
+					{ "@edition": "20", "@authority": "ddc", "#text": "895.6/11409" }
+				],
+				"relatedItem": [
+					null,
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/99154297556603941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "0-585-10441-7" },
+					{ "@type": "lccn", "#text": "93010237" }
+				],
+				"location": [null, null],
+				"extension": [
+					{
+						"librarycloud": {
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/99154297556603941",
+							"processingDate": "2022-06-17T05:12Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": "aacr",
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "DLC"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "930312" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20170822"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "99154297556603941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)"
+				}
+			},
+			{
+				"titleInfo": {
+					"nonSort": "The  ",
+					"title": "ends of meter in modern Japanese poetry",
+					"subTitle": "translation and form"
+				},
+				"name": {
+					"@type": "personal",
+					"namePart": "Mehl, Scott",
+					"role": [
+						{ "roleTerm": { "@type": "text", "#text": "creator" } },
+						{ "roleTerm": { "@type": "text", "#text": "author." } }
+					]
+				},
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "marcgt", "#text": "bibliography" },
+					{ "@authority": "rdacontent", "#text": "text" },
+					{
+						"@authority": "fast",
+						"#text": "Criticism, interpretation, etc."
+					},
+					{ "@authority": "fast", "#text": "History" }
+				],
+				"originInfo": [
+					{
+						"place": {
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "nyu"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "New York (State)"
+								}
+							]
+						},
+						"dateIssued": { "@encoding": "marc", "#text": "2021" },
+						"copyrightDate": { "@encoding": "marc", "#text": "2021" },
+						"issuance": "monographic"
+					},
+					{
+						"place": {
+							"placeTerm": { "@type": "text", "#text": "Ithaca :" }
+						},
+						"publisher": "Cornell  East Asia Series, an imprint of Cornell University Press,",
+						"dateIssued": "2021."
+					}
+				],
+				"language": {
+					"languageTerm": [
+						{
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						},
+						{
+							"@authority": "iso639-2b",
+							"@type": "text",
+							"#text": "English"
+						}
+					]
+				},
+				"physicalDescription": {
+					"form": [
+						{ "@authority": "marcform", "#text": "print" },
+						{
+							"@type": "media",
+							"@authority": "rdamedia",
+							"#text": "unmediated"
+						},
+						{
+							"@type": "carrier",
+							"@authority": "rdacarrier",
+							"#text": "volume"
+						}
+					],
+					"extent": "xvi, 235 pages : facsimiles ; 24 cm."
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "Scott Mehl."
+					},
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references and index."
+					}
+				],
+				"subject": [
+					{
+						"geographicCode": {
+							"@authority": "marcgac",
+							"#text": "a-ja---"
+						}
+					},
+					{ "@authority": "fast", "temporal": "1800-1912" },
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese poetry", "History and criticism"],
+						"temporal": "Meiji period, 1868-1912"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Japanese literature",
+							"Foreign influences",
+							"History"
+						],
+						"temporal": "19th century"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Translating and interpreting", "History"],
+						"geographic": "Japan",
+						"temporal": "19th century"
+					},
+					{
+						"@authority": "rvm",
+						"topic": [
+							"Littérature japonaise",
+							"Influence étrangère",
+							"Histoire"
+						],
+						"temporal": "19e siècle"
+					},
+					{
+						"@authority": "fast",
+						"topic": ["Japanese literature", "Foreign influences"]
+					},
+					{
+						"@authority": "fast",
+						"topic": ["Japanese poetry", "Meiji period"]
+					},
+					{
+						"@authority": "fast",
+						"topic": "Translating and interpreting"
+					},
+					{ "@authority": "fast", "geographic": "Japan" }
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "PL733.6 .M44 2021" },
+					{ "@edition": "23", "@authority": "ddc", "#text": "895.61/4209" }
+				],
+				"relatedItem": [
+					{
+						"titleInfo": {
+							"title": "Cornell East Asia series ; number 210"
+						}
+					},
+					{
+						"@type": "series",
+						"titleInfo": { "title": "Cornell East Asia series 210" }
+					},
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/99156333855303941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "9781501761171" },
+					{ "@type": "isbn", "#text": "150176117X" },
+					{ "@type": "isbn", "@invalid": "yes", "#text": "9781501761195" },
+					{ "@type": "isbn", "@invalid": "yes", "#text": "9781501761188" },
+					{ "@type": "oclc", "#text": "1289275773" }
+				],
+				"location": [
+					{
+						"physicalLocation": {
+							"@valueURI": "http://id.loc.gov/rwo/agents/no2014094889",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Widener Library, Harvard University"
+						},
+						"shelfLocator": "DS501 .C67x vol. 210"
+					},
+					null,
+					null
+				],
+				"extension": [
+					{
+						"librarycloud": {
+							"HarvardRepositories": { "HarvardRepository": "Widener" },
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/99156333855303941",
+							"processingDate": "2022-07-31T04:03Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": "rda",
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "UKMGB"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "211117" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20220719"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "99156333855303941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)",
+					"languageOfCataloging": {
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					}
+				}
+			},
+			{
+				"titleInfo": [
+					{
+						"title": "Worlding Sei Shônagon",
+						"subTitle": "The pillow book in translation"
+					},
+					{
+						"@type": "alternative",
+						"title": "Pillow book in translation"
+					},
+					{ "@type": "uniform", "title": "Project Muse UPCC books" }
+				],
+				"name": {
+					"@type": "personal",
+					"namePart": "Henitiuk, Valerie",
+					"role": { "roleTerm": { "@type": "text", "#text": "creator" } }
+				},
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "marcgt", "#text": "bibliography" },
+					{ "@authority": "marcgt", "#text": "biography" }
+				],
+				"originInfo": {
+					"place": [
+						{
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "onc"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "Ontario"
+								}
+							]
+						},
+						{ "placeTerm": { "@type": "text", "#text": "Ottawa" } }
+					],
+					"publisher": "University of Ottawa Press",
+					"dateIssued": [
+						"c2012",
+						{ "@encoding": "marc", "#text": "2012" }
+					],
+					"issuance": "monographic"
+				},
+				"language": [
+					{
+						"languageTerm": [
+							{
+								"@authority": "iso639-2b",
+								"@type": "code",
+								"#text": "eng"
+							},
+							{
+								"@authority": "iso639-2b",
+								"@type": "text",
+								"#text": "English"
+							}
+						]
+					},
+					{
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "mul"
+						}
+					}
+				],
+				"physicalDescription": {
+					"form": { "@authority": "marcform", "#text": "print" },
+					"extent": "ix, 312 p. : col. ill., music ; 21 cm."
+				},
+				"abstract": {
+					"@type": "Abstract",
+					"#text": "Contained herein are forty-eight translations1 of what is arguably the single most famous passage in Japanese literature, namely the opening section of The Pillow Book, written around the turn of the eleventh century by a woman we know as Sei Shônagon. The languages represented, in entries dating from 1875 to the present day, are Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, French, German, Italian, Romanian, Russian, Spanish and Turkish; two versions have also been provided in Chinese (with additional versions in modern Japanese appearing in Appendix III). Most of the translations have previously been available only in rare or hard to obtain sources, and are now brought together for the first time in an affordable and readily accessible format."
+				},
+				"tableOfContents": "Preface -- Acknowledgements -- Introduction -- Sei Shônagon Classical Japanese -- First generation of western translators -- Second generation -- Third generation -- Fourth generation -- Appendix I. Romanization of original and romanization with English gloss -- Appendix II. A selection of book covers from the translations -- Appendix III. A selection of modern Japanese versions -- Bibliographies.",
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "Valerie Henitiuk."
+					},
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references."
+					},
+					{
+						"@type": "additional physical form",
+						"#text": "Issued also in electronic format."
+					},
+					{
+						"@type": "language",
+						"#text": "Includes text in multiple languages."
+					}
+				],
+				"subject": [
+					{
+						"geographicCode": {
+							"@authority": "marcgac",
+							"#text": "a-ja---"
+						}
+					},
+					{
+						"@authority": "lcsh",
+						"name": {
+							"@type": "personal",
+							"namePart": [
+								"Sei Shōnagon",
+								{ "@type": "date", "#text": "approximately 967-" }
+							]
+						},
+						"titleInfo": { "title": "Makura no sōshi" }
+					},
+					{
+						"@authority": "lcsh",
+						"name": {
+							"@type": "personal",
+							"namePart": [
+								"Sei Shōnagon",
+								{ "@type": "date", "#text": "approximately 967-" }
+							]
+						},
+						"topic": ["Translations", "History and criticism"]
+					},
+					{
+						"@authority": "rvm",
+						"name": {
+							"@type": "personal",
+							"namePart": [
+								"Sei Shōnagon",
+								{ "@type": "date", "#text": "née ca 967" }
+							]
+						},
+						"titleInfo": { "title": "Makura no sōshi" }
+					},
+					{
+						"@authority": "rvm",
+						"name": {
+							"@type": "personal",
+							"namePart": [
+								"Sei Shōnagon",
+								{ "@type": "date", "#text": "née ca 967" }
+							]
+						},
+						"topic": ["Traductions", "Histoire et critique"]
+					},
+					{
+						"@authority": "lcsh",
+						"name": {
+							"@type": "personal",
+							"namePart": [
+								"Sei Shōnagon",
+								{ "@type": "date", "#text": "approximately 967-" }
+							]
+						},
+						"titleInfo": { "title": "Makura no sōshi" },
+						"topic": "Translations"
+					},
+					{
+						"@authority": "lcsh",
+						"titleInfo": { "title": "Makura no sōshi" },
+						"genre": "Translations"
+					},
+					{
+						"@authority": "rvm",
+						"titleInfo": { "title": "Makura no sōshi" },
+						"genre": "Traductions"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese literature", "History and criticism"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": "Women authors, Japanese",
+						"temporal": "Heian period, 794-1185"
+					},
+					{ "@authority": "lcsh", "topic": "East and West in literature" },
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Translating and interpreting",
+							"Cross-cultural studies"
+						]
+					},
+					{
+						"@authority": "rvm",
+						"topic": ["Littérature japonaise", "Histoire et critique"],
+						"temporal": "794-1185 (Époque de Heian)"
+					},
+					{
+						"@authority": "rvm",
+						"topic": "Écrivaines japonaises",
+						"temporal": "794-1185 (Époque de Heian)"
+					},
+					{
+						"@authority": "rvm",
+						"topic": "Orient et Occident dans la littérature"
+					},
+					{
+						"@authority": "rvm",
+						"topic": ["Traduction littéraire", "Études transculturelles"]
+					}
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "PL788.6.A1995 H46 2012" },
+					{ "@edition": "23", "@authority": "ddc", "#text": "895.6/81403" }
+				],
+				"relatedItem": [
+					{ "titleInfo": { "title": "Perspectives on translation" } },
+					{
+						"@type": "series",
+						"titleInfo": { "title": "Perspectives on translation" }
+					},
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/990133365280203941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "9780776607283" },
+					{ "@type": "isbn", "#text": "0776607286" },
+					{ "@type": "oclc", "#text": "791162721" }
+				],
+				"location": [
+					{
+						"url": "https://nrs.harvard.edu/urn-3:hul.ebookbatch.PMUSE_batch:muse9780776619798"
+					},
+					{
+						"physicalLocation": {
+							"@valueURI": "http://id.loc.gov/rwo/agents/no2014094889",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Widener Library, Harvard University"
+						},
+						"shelfLocator": "PL788.6.A1995 H46 2012"
+					}
+				],
+				"extension": [
+					{
+						"librarycloud": {
+							"HarvardRepositories": { "HarvardRepository": "Widener" },
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/990133365280203941",
+							"priorrecordids": {
+								"recordIdentifier": {
+									"@source": "MH:ALEPH",
+									"#text": "013336528"
+								}
+							},
+							"processingDate": "2021-10-31T05:18Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": "aacr",
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "NLC"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "120423" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20131113"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "990133365280203941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)",
+					"languageOfCataloging": {
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					}
+				}
+			},
+			{
+				"titleInfo": [
+					{
+						"title": "Tales of times now past",
+						"subTitle": "sixty-two stories from a medieval Japanese collection"
+					},
+					{
+						"@type": "uniform",
+						"title": "Konjaku monogatari. Selections. English"
+					}
+				],
+				"name": [
+					{
+						"@type": "personal",
+						"namePart": "Ury, Marian",
+						"role": {
+							"roleTerm": { "@type": "text", "#text": "translator." }
+						}
+					},
+					{
+						"@type": "corporate",
+						"namePart": "Michigan Publishing (University of Michigan)",
+						"role": {
+							"roleTerm": { "@type": "text", "#text": "issuing body." }
+						}
+					}
+				],
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "marcgt", "#text": "bibliography" },
+					{ "@authority": "rdacontent", "#text": "text" },
+					{ "@authority": "4", "#text": "Electronic books." }
+				],
+				"originInfo": [
+					{
+						"place": {
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "miu"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "Michigan"
+								}
+							]
+						},
+						"dateIssued": { "@encoding": "marc", "#text": "1993" },
+						"issuance": "monographic"
+					},
+					{
+						"place": {
+							"placeTerm": {
+								"@type": "text",
+								"#text": "Ann Arbor, Michigan :"
+							}
+						},
+						"publisher": "University of Michigan Press,",
+						"dateIssued": "1993."
+					}
+				],
+				"language": {
+					"languageTerm": [
+						{
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						},
+						{
+							"@authority": "iso639-2b",
+							"@type": "text",
+							"#text": "English"
+						}
+					]
+				},
+				"physicalDescription": {
+					"form": [
+						{ "@authority": "marcform", "#text": "print" },
+						{
+							"@authority": "marccategory",
+							"#text": "electronic resource"
+						},
+						{ "@authority": "marcsmd", "#text": "remote" },
+						{
+							"@type": "media",
+							"@authority": "rdamedia",
+							"#text": "computer"
+						},
+						{
+							"@type": "carrier",
+							"@authority": "rdacarrier",
+							"#text": "online resource"
+						}
+					],
+					"extent": "1 online resource (xi, 199 pages) : illustrations."
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "Marian Ury."
+					},
+					"Originally published: Berkeley : University of California , c1979.",
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references (pages [24]-25)."
+					},
+					{
+						"@type": "funding",
+						"#text": "Sponsored by National Endowment for the Humanities"
+					}
+				],
+				"subject": [
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Folk literature, Japanese",
+							"Translations into English"
+						]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese literature", "Translations into English"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Buddhist legends", "Translations into English"]
+					},
+					{
+						"@authority": "lcsh",
+						"geographic": "Japan",
+						"topic": ["Social life and customs", "Fiction"]
+					}
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "PL787.K6 E5 1993" },
+					{ "@edition": "20", "@authority": "ddc", "#text": "895.6/3108" }
+				],
+				"relatedItem": [
+					{
+						"titleInfo": {
+							"title": "Michigan Classics in Japanese Studies ; no. 9"
+						}
+					},
+					{
+						"@type": "series",
+						"titleInfo": {
+							"title": "Michigan classics in Japanese studies no. 9"
+						}
+					},
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/99155800117903941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "9780472128112" },
+					{ "@type": "isbn", "#text": "9780472902118" },
+					{ "@type": "isbn", "@invalid": "yes", "#text": "9780939512614" },
+					{ "@type": "doi", "#text": "10.3998/mpub.18748" }
+				],
+				"location": [null, null],
+				"extension": [
+					{
+						"librarycloud": {
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/99155800117903941",
+							"processingDate": "2021-10-20T05:13Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": ["aacr", "pn"],
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "MiU"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "990524" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "19990524"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "99155800117903941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)",
+					"languageOfCataloging": {
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					}
+				}
+			},
+			{
+				"titleInfo": [
+					{
+						"title": "Tales of Times Now Past",
+						"subTitle": "Sixty-Two Stories from a Medieval Japanese Collection"
+					},
+					{
+						"@type": "uniform",
+						"title": "Konjaku monogatari. English. Selections"
+					}
+				],
+				"name": [
+					{ "@type": "personal", "namePart": "Ury, Marian." },
+					{
+						"@type": "corporate",
+						"namePart": "Michigan Publishing (University of Michigan)",
+						"role": {
+							"roleTerm": { "@type": "text", "#text": "issuing body." }
+						}
+					}
+				],
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "rdacontent", "#text": "text" },
+					{ "@authority": "4", "#text": "Electronic books. " }
+				],
+				"originInfo": [
+					{
+						"place": {
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "miu"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "Michigan"
+								}
+							]
+						},
+						"dateIssued": { "@encoding": "marc", "#text": "1993" },
+						"issuance": "monographic"
+					},
+					{
+						"place": {
+							"placeTerm": {
+								"@type": "text",
+								"#text": "Ann Arbor, Mich. :"
+							}
+						},
+						"publisher": "Center for Japanese Studies, University of Michigan,",
+						"dateIssued": "1993."
+					}
+				],
+				"language": [
+					{
+						"languageTerm": [
+							{
+								"@authority": "iso639-2b",
+								"@type": "code",
+								"#text": "eng"
+							},
+							{
+								"@authority": "iso639-2b",
+								"@type": "text",
+								"#text": "English"
+							}
+						]
+					},
+					{
+						"@objectPart": "translation",
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "jpn"
+						}
+					}
+				],
+				"physicalDescription": {
+					"form": [
+						{
+							"@authority": "marccategory",
+							"#text": "electronic resource"
+						},
+						{ "@authority": "marcsmd", "#text": "remote" },
+						{
+							"@type": "media",
+							"@authority": "rdamedia",
+							"#text": "computer"
+						},
+						{
+							"@type": "carrier",
+							"@authority": "rdacarrier",
+							"#text": "online resource"
+						}
+					],
+					"extent": "1 online resource (xi, 199 pages) : illustrations; digital, PDF file(s)."
+				},
+				"accessCondition": {
+					"@type": "restriction on access",
+					"#text": "Open Access"
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "Marian Ury."
+					},
+					"Originally published: Berkeley : University of California , c1979.",
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references (p. [24]-25)."
+					},
+					{
+						"@type": "additional physical form",
+						"#text": "Also available in print form."
+					},
+					{
+						"@type": "funding",
+						"#text": "Sponsored by National Endowment for the Humanities"
+					},
+					{
+						"@type": "system details",
+						"#text": "Mode of access: internet via World Wide Web."
+					}
+				],
+				"subject": [
+					{
+						"geographicCode": {
+							"@authority": "marcgac",
+							"#text": "a-ja---"
+						}
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Buddhist legends", "Translations into English"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese literature", "Translations into English"],
+						"temporal": "Heian period, 794-1185"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Folk literature, Japanese",
+							"Translations into English"
+						]
+					},
+					{
+						"@authority": "lcsh",
+						"geographic": "Japan",
+						"topic": "Social life and customs",
+						"genre": "Fiction"
+					}
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "PL787.K6 E5 1993" },
+					{ "@edition": "20", "@authority": "ddc", "#text": "895.6/3108" }
+				],
+				"relatedItem": [
+					{
+						"titleInfo": {
+							"title": "Michigan Classics in Japanese Studies ; no. 9"
+						}
+					},
+					{
+						"@type": "otherFormat",
+						"@displayLabel": "Print version:",
+						"@otherType": "Print version:"
+					},
+					{
+						"@type": "series",
+						"titleInfo": {
+							"title": "Michigan classics in Japanese studies ; no. 9"
+						}
+					},
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/99155238171903941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "0-472-12811-6" },
+					{ "@type": "isbn", "#text": "0-939512-61-0" },
+					{ "@type": "doi", "#text": "10.3998/mpub.18748" },
+					{ "@type": "lccn", "@invalid": "yes", "#text": "93023945" },
+					{ "@type": "oclc", "#text": "1184508577" },
+					{ "@type": "oclc", "#text": "1283856033" }
+				],
+				"location": [null, null],
+				"extension": [
+					{
+						"librarycloud": {
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/99155238171903941",
+							"processingDate": "2022-06-17T05:12Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": "aacr",
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "MdBmJHUP"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "930514" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20220204"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "99155238171903941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)"
+				}
+			},
+			{
+				"titleInfo": [
+					{
+						"title": "Nenpyō Ei-Bei bungakushi",
+						"subTitle": "honʾyakusho heiki"
+					},
+					{
+						"@type": "alternative",
+						"@displayLabel": "Hyōshi no shomei:",
+						"title": "Annals of English & American literature"
+					}
+				],
+				"name": [
+					{
+						"@type": "personal",
+						"namePart": [
+							"Kasahara, Katsurō",
+							{ "@type": "date", "#text": "1938-" }
+						],
+						"role": {
+							"roleTerm": { "@type": "text", "#text": "creator" }
+						}
+					},
+					{
+						"@type": "personal",
+						"namePart": [
+							"Narita, Shigehisa",
+							{ "@type": "date", "#text": "1907-1986" }
+						]
+					}
+				],
+				"typeOfResource": "text",
+				"genre": { "@authority": "marcgt", "#text": "bibliography" },
+				"originInfo": {
+					"place": [
+						{
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "ja"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "Japan"
+								}
+							]
+						},
+						{ "placeTerm": { "@type": "text", "#text": "Tōkyō" } }
+					],
+					"publisher": "Aratake Shuppan",
+					"dateIssued": "1975",
+					"issuance": "monographic"
+				},
+				"language": [
+					{
+						"languageTerm": [
+							{
+								"@authority": "iso639-2b",
+								"@type": "code",
+								"#text": "jpn"
+							},
+							{
+								"@authority": "iso639-2b",
+								"@type": "text",
+								"#text": "Japanese"
+							}
+						]
+					},
+					{
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					}
+				],
+				"physicalDescription": {
+					"form": { "@authority": "marcform", "#text": "print" },
+					"extent": "380 p. ; 19 cm."
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "Kasahara Katsurō henshū."
+					},
+					"Kanshū: Narita Shigehisa.",
+					"Includes index.",
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references: (p. ix-x)."
+					}
+				],
+				"subject": [
+					{
+						"@authority": "lcsh",
+						"topic": "English literature",
+						"genre": "Bibliography"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": "American literature",
+						"genre": "Bibliography"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["English literature", "Translations into Japanese"],
+						"genre": "Bibliography"
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"American literature",
+							"Translations into Japanese"
+						],
+						"genre": "Bibliography"
+					},
+					{ "topic": "IgirisubungakuRekishiNenpyō." },
+					{ "topic": "AmerikabungakuRekishiNenpyō." }
+				],
+				"identifier": { "@type": "oclc", "#text": "33570523" },
+				"relatedItem": {
+					"@otherType": "HOLLIS record",
+					"location": {
+						"url": "https://id.lib.harvard.edu/alma/990082209490203941/catalog"
+					}
+				},
+				"location": [
+					{
+						"physicalLocation": {
+							"@valueURI": "http://isni.org/isni/0000000121790804",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Harvard-Yenching Library, Harvard University"
+						},
+						"shelfLocator": "J 5988.1 8773"
+					},
+					null,
+					null
+				],
+				"extension": [
+					{
+						"librarycloud": {
+							"HarvardRepositories": {
+								"HarvardRepository": "Harvard-Yenching"
+							},
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/990082209490203941",
+							"priorrecordids": {
+								"recordIdentifier": {
+									"@source": "MH:ALEPH",
+									"#text": "008220949"
+								}
+							},
+							"processingDate": "2022-01-31T06:11Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "LWU"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "880729" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20020606"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "990082209490203941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)",
+					"languageOfCataloging": {
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "jpn"
+						}
+					}
+				}
+			},
+			{
+				"titleInfo": [
+					{
+						"@altRepGroup": "02",
+						"title": "Honʾyaku no chihei",
+						"subTitle": "honʾyakusha to shite no Meiji no sakka"
+					},
+					{
+						"@altRepGroup": "02",
+						"title": "翻訳の地平",
+						"subTitle": "翻訳者としての明治の作家"
+					}
+				],
+				"name": [
+					{
+						"@type": "personal",
+						"@altRepGroup": "01",
+						"namePart": [
+							"Akiyama, Yūzō",
+							{ "@type": "date", "#text": "1931-" }
+						],
+						"role": {
+							"roleTerm": { "@type": "text", "#text": "creator" }
+						}
+					},
+					{
+						"@type": "personal",
+						"@altRepGroup": "01",
+						"namePart": [
+							"秋山勇造",
+							{ "@type": "date", "#text": "1931-" }
+						]
+					}
+				],
+				"typeOfResource": "text",
+				"originInfo": [
+					{
+						"@altRepGroup": "03",
+						"place": [
+							{
+								"placeTerm": [
+									{
+										"@authority": "marccountry",
+										"@type": "code",
+										"#text": "ja"
+									},
+									{
+										"@authority": "marccountry",
+										"@type": "text",
+										"#text": "Japan"
+									}
+								]
+							},
+							{ "placeTerm": { "@type": "text", "#text": "Tōkyō" } }
+						],
+						"publisher": "Kanrin Shobō",
+						"dateIssued": "1995",
+						"issuance": "monographic"
+					},
+					{
+						"@altRepGroup": "03",
+						"place": {
+							"placeTerm": { "@type": "text", "#text": "東京 :" }
+						},
+						"publisher": "翰林書房,",
+						"dateIssued": "1995."
+					}
+				],
+				"language": [
+					{
+						"languageTerm": [
+							{
+								"@authority": "iso639-2b",
+								"@type": "code",
+								"#text": "jpn"
+							},
+							{
+								"@authority": "iso639-2b",
+								"@type": "text",
+								"#text": "Japanese"
+							}
+						]
+					},
+					{
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					},
+					{
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "fre"
+						}
+					}
+				],
+				"physicalDescription": {
+					"form": { "@authority": "marcform", "#text": "print" },
+					"extent": "293, ix p. ; 20 cm."
+				},
+				"note": [
+					{
+						"@altRepGroup": "00",
+						"@type": "statement of responsibility",
+						"#text": "Akiyama Yūzō."
+					},
+					"Includes index.",
+					{
+						"@type": "language",
+						"#text": "Some texts in English and French included."
+					},
+					{
+						"@altRepGroup": "00",
+						"@type": "statement of responsibility",
+						"#text": "秋山勇造."
+					}
+				],
+				"subject": [
+					{
+						"geographicCode": {
+							"@authority": "marcgac",
+							"#text": "a-ja---"
+						}
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Literature",
+							"Translations into Japanese",
+							"History and criticism"
+						]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Japanese literature", "Translating"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": "Authors, Japanese",
+						"temporal": "Meiji period, 1868-1912"
+					}
+				],
+				"classification": {
+					"@authority": "lcc",
+					"#text": "PL720.6 A44 1995x"
+				},
+				"identifier": [
+					{ "@type": "isbn", "#text": "4906424791 :" },
+					{ "@type": "lccn", "#text": "97460370" },
+					{ "@type": "oclc", "#text": "34897124" }
+				],
+				"relatedItem": {
+					"@otherType": "HOLLIS record",
+					"location": {
+						"url": "https://id.lib.harvard.edu/alma/990084084700203941/catalog"
+					}
+				},
+				"location": [
+					{
+						"physicalLocation": {
+							"@valueURI": "http://isni.org/isni/0000000121790804",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Harvard-Yenching Library, Harvard University"
+						},
+						"shelfLocator": "PL720.6 A44 1995x"
+					},
+					null,
+					null
+				],
+				"extension": [
+					{
+						"librarycloud": {
+							"HarvardRepositories": {
+								"HarvardRepository": "Harvard-Yenching"
+							},
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/990084084700203941",
+							"priorrecordids": {
+								"recordIdentifier": {
+									"@source": "MH:ALEPH",
+									"#text": "008408470"
+								}
+							},
+							"processingDate": "2021-08-08T05:25Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": "aacr",
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "*NNC*"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "970715" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20024617"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "990084084700203941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)"
+				}
+			},
+			{
+				"titleInfo": {
+					"title": "Realizing Autonomy",
+					"subTitle": "Practice and Reflection in Language Education Contexts"
+				},
+				"name": [
+					{
+						"@type": "personal",
+						"namePart": "Irie, Kay.",
+						"role": [
+							{ "roleTerm": { "@type": "text", "#text": "creator" } },
+							{ "roleTerm": { "@type": "text", "#text": "author." } },
+							{
+								"roleTerm": {
+									"@type": "code",
+									"@authority": "marcrelator",
+									"#text": "aut"
+								}
+							},
+							{
+								"roleTerm": {
+									"@type": "code",
+									"@authority": "marcrelator",
+									"#text": "http://id.loc.gov/vocabulary/relators/aut"
+								}
+							}
+						]
+					},
+					{
+						"@type": "personal",
+						"namePart": "Stewart, Alison.",
+						"role": [
+							{ "roleTerm": { "@type": "text", "#text": "author." } },
+							{
+								"roleTerm": {
+									"@type": "code",
+									"@authority": "marcrelator",
+									"#text": "aut"
+								}
+							},
+							{
+								"roleTerm": {
+									"@type": "code",
+									"@authority": "marcrelator",
+									"#text": "http://id.loc.gov/vocabulary/relators/aut"
+								}
+							}
+						]
+					}
+				],
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "marcgt", "#text": "government publication" },
+					"text"
+				],
+				"originInfo": [
+					{
+						"place": {
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "xxk"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "United Kingdom"
+								}
+							]
+						},
+						"dateIssued": { "@encoding": "marc", "#text": "2012" },
+						"edition": "1st ed. 2012.",
+						"issuance": "monographic"
+					},
+					{
+						"place": {
+							"placeTerm": { "@type": "text", "#text": "London :" }
+						},
+						"publisher": "Palgrave Macmillan UK :",
+						"dateIssued": "2012."
+					}
+				],
+				"language": {
+					"languageTerm": [
+						{
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						},
+						{
+							"@authority": "iso639-2b",
+							"@type": "text",
+							"#text": "English"
+						}
+					]
+				},
+				"physicalDescription": {
+					"form": [
+						{ "@authority": "gmd", "#text": "electronic resource" },
+						{
+							"@authority": "marccategory",
+							"#text": "electronic resource"
+						},
+						{ "@authority": "marcsmd", "#text": "remote" },
+						{ "@type": "media", "@authority": "", "#text": "computer" },
+						{
+							"@type": "carrier",
+							"@authority": "",
+							"#text": "online resource"
+						}
+					],
+					"extent": "1 online resource (303 p.)"
+				},
+				"abstract": {
+					"@type": "Summary",
+					"#text": "Realizing Autonomy: Practice and Reflection in Language Education Contexts presents critical practitioner research into innovative approaches to language learner autonomy. Writing about experiences in a range of widely differing contexts, the authors offer fresh insights and perspectives on the challenges and contradictions of learner autonomy."
+				},
+				"tableOfContents": [
+					"Cover; Half-title; Title; Copyright; Contents; List of Tables; List of Figures; Acknowledgments; Foreword; Notes on Contributors; 1 Realizing Autonomy: Contradictions in Practice and Context; Part I Goals and Frameworks; 2 Learner Autonomy for International Students: Evolution of a University JSL Program; 3 Experimenting with Autonomy: Learners Teaching Learners; 4 Introducing a Negotiated Curriculum; 5 Creating Space for Learning: Language Learning Materials and Autonomy; Part II Strategies and Scaffolding; 6 Learner Development Through Listening Strategy Training",
+					"7 Transformative Learning in Action: Insights from the Practice of Journal Writing8 Scaffolding Economics Language and Learning with Case Studies; 9 The Truth of the Tale: Reconceptualizing Authority in Content-Based Teaching; Part III Collaborative Learning; 10 Creating a Writing Center: Autonomy, Interdependence, and Identity; 11 Who, What, How? Autonomy and English through Drama; 12 Positive Interdependence for Teacher and Learner Autonomy: The Case of the CARTA Program; 13 Parallel Blogging: Explorations in Teacher and Learner Autonomy; Part IV Problems and Possibilities",
+					"14 \"Nothing to Worry About\": Anxiety-reduction Strategies in Harry Potter's Class and Mine15 Responding to Video Journals: Rethinking the Role of Feedback for Learner Autonomy; 16 Listen to Students' Stories: Promoting Learner Autonomy through Out-of-Class Listening Activities; 17 Practical Frustration Busters for Learner and Teacher Autonomy; Afterword: Dogme for Beginners - The Autonomy of the Group; Index"
+				],
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "by Kay Irie, Alison Stewart."
+					},
+					"Description based upon print version of record.",
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references and index."
+					},
+					{ "@type": "language", "#text": "English" }
+				],
+				"subject": [
+					{
+						"@authority": "lcsh",
+						"topic": "Language and languages—Study and teaching"
+					},
+					{ "@authority": "lcsh", "topic": "Linguistics" },
+					{ "@authority": "lcsh", "topic": "Language and education" },
+					{ "@authority": "lcsh", "topic": "Literature" },
+					{ "@authority": "lcsh", "topic": "Japanese language" },
+					{ "@authority": "lcsh", "topic": "Literature—Translations" },
+					{ "topic": "Language Teaching" },
+					{ "topic": "Linguistics, general" },
+					{ "topic": "Language Education" },
+					{ "topic": "Literature, general" },
+					{ "topic": "Japanese" },
+					{ "topic": "Translation Studies" }
+				],
+				"classification": [
+					{ "@authority": "lcc", "#text": "P51-P59.4" },
+					{ "@authority": "ddc", "#text": "418.0071 418.0071052" },
+					{
+						"@authority": "bisacsh",
+						"#text": "LAN009050 EDU005000 LAN009000 LAN023000 LAN020000 FOR014000"
+					}
+				],
+				"relatedItem": [
+					null,
+					null,
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/99154297962703941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "1-280-68126-8" },
+					{ "@type": "isbn", "#text": "9786613658203" },
+					{ "@type": "isbn", "#text": "0-230-35848-9" },
+					{ "@type": "doi", "#text": "10.1057/9780230358485" },
+					{ "@type": "oclc", "#text": "795120151" }
+				],
+				"location": [null, null],
+				"extension": [
+					{
+						"librarycloud": {
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/99154297962703941",
+							"processingDate": "2022-07-07T05:11Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"recordCreationDate": { "@encoding": "marc", "#text": "151208" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20200918"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "99154297962703941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)"
+				}
+			},
+			{
+				"titleInfo": {
+					"title": "Aspects of science fiction since the 1980s",
+					"subTitle": "China, Italy, Japan, Korea"
+				},
+				"typeOfResource": "text",
+				"genre": [
+					{ "@authority": "marcgt", "#text": "abstract or summary" },
+					{ "@authority": "rdacontent", "#text": "text" }
+				],
+				"originInfo": [
+					{
+						"place": {
+							"placeTerm": [
+								{
+									"@authority": "marccountry",
+									"@type": "code",
+									"#text": "it"
+								},
+								{
+									"@authority": "marccountry",
+									"@type": "text",
+									"#text": "Italy"
+								}
+							]
+						},
+						"dateIssued": { "@encoding": "marc", "#text": "2015" },
+						"issuance": "monographic"
+					},
+					{
+						"place": {
+							"placeTerm": { "@type": "text", "#text": "Torino :" }
+						},
+						"publisher": "Nuova Trauben,",
+						"dateIssued": [2015]
+					}
+				],
+				"language": [
+					{
+						"languageTerm": [
+							{
+								"@authority": "iso639-2b",
+								"@type": "code",
+								"#text": "ita"
+							},
+							{
+								"@authority": "iso639-2b",
+								"@type": "text",
+								"#text": "Italian"
+							}
+						]
+					},
+					{
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					},
+					{
+						"@objectPart": "summary or subtitle",
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "eng"
+						}
+					},
+					{
+						"@objectPart": "translation",
+						"languageTerm": {
+							"@authority": "iso639-2b",
+							"@type": "code",
+							"#text": "chi"
+						}
+					}
+				],
+				"physicalDescription": {
+					"form": [
+						{ "@authority": "marcform", "#text": "print" },
+						{
+							"@type": "media",
+							"@authority": "rdamedia",
+							"#text": "unmediated"
+						},
+						{
+							"@type": "carrier",
+							"@authority": "rdacarrier",
+							"#text": "volume"
+						}
+					],
+					"extent": "176 pages ; 21 cm."
+				},
+				"note": [
+					{
+						"@type": "statement of responsibility",
+						"#text": "texts by Lorenzo Andolfatto [and seven others]."
+					},
+					{
+						"@type": "bibliography",
+						"#text": "Includes bibliographical references."
+					},
+					{
+						"@type": "language",
+						"#text": "Essays in English with one essay in Italian with abstract in English; includes two short stories in English translation from Chinese."
+					}
+				],
+				"subject": [
+					{
+						"@authority": "lcsh",
+						"topic": ["Science fiction, Chinese", "History and criticism"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Science fiction, Japanese",
+							"History and criticism"
+						]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": ["Science fiction, Korean", "History and criticism"]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Chinese literature",
+							"Translations into Italian",
+							"History and criticism"
+						]
+					},
+					{
+						"@authority": "lcsh",
+						"topic": [
+							"Japanese literature",
+							"Translations into Italian",
+							"History and criticism"
+						]
+					}
+				],
+				"classification": {
+					"@authority": "lcc",
+					"#text": "PL2275.S34 A87 2015"
+				},
+				"relatedItem": [
+					{ "titleInfo": { "title": "Quaderni di cultura ; 12" } },
+					{
+						"@type": "constituent",
+						"titleInfo": {
+							"title": "Eastern and Western interactions in some Italian, Japanese and Korean science fiction works"
+						},
+						"name": {
+							"@type": "personal",
+							"namePart": "Bertoni, Roberto."
+						}
+					},
+					{
+						"@type": "series",
+						"titleInfo": { "title": "Quaderni di cultura ; 12" }
+					},
+					{
+						"@otherType": "HOLLIS record",
+						"location": {
+							"url": "https://id.lib.harvard.edu/alma/990143468560203941/catalog"
+						}
+					}
+				],
+				"identifier": [
+					{ "@type": "isbn", "#text": "9788899312015 :" },
+					{ "@type": "oclc", "#text": "905087873" }
+				],
+				"location": [
+					{
+						"physicalLocation": {
+							"@valueURI": "http://id.loc.gov/rwo/agents/no2014094889",
+							"@displayLabel": "Harvard repository",
+							"@type": "repository",
+							"#text": "Widener Library, Harvard University"
+						},
+						"shelfLocator": "PL2275.S34 A87 2015"
+					},
+					null,
+					null
+				],
+				"extension": [
+					{
+						"librarycloud": {
+							"HarvardRepositories": { "HarvardRepository": "Widener" },
+							"originalDocument": "https://s3.amazonaws.com/harvard.librarycloud.marc/990143468560203941",
+							"priorrecordids": {
+								"recordIdentifier": {
+									"@source": "MH:ALEPH",
+									"#text": "014346856"
+								}
+							},
+							"processingDate": "2022-07-30T09:43Z"
+						}
+					},
+					{ "sets": null }
+				],
+				"recordInfo": {
+					"descriptionStandard": "rda",
+					"recordContentSource": {
+						"@authority": "marcorg",
+						"#text": "ItFiC"
+					},
+					"recordCreationDate": { "@encoding": "marc", "#text": "150227" },
+					"recordChangeDate": {
+						"@encoding": "iso8601",
+						"#text": "20150603"
+					},
+					"recordIdentifier": {
+						"@source": "MH:ALMA",
+						"#text": "990143468560203941"
+					},
+					"recordOrigin": "Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl\n        (Revision 1.117 2017/02/14)"
+				}
+			}
+		]
+	}
+}

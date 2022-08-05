@@ -1,17 +1,21 @@
 import { Table } from '@mantine/core';
 import { BaseSyntheticEvent, Dispatch, SetStateAction } from 'react';
 import { Resource } from '../models/Resource';
-import { booleanToYesNo, formatDate_MMM_YYYY } from '../utils';
+import {
+	booleanToYesNo,
+	formatDate_MMM_YYYY,
+	getFirstAuthorName,
+} from '../utils';
 
-interface ResourcesListProps {
+interface ResourceListProps {
 	resources: Resource[];
 	setSelectedResourceId: Dispatch<SetStateAction<string>>;
 }
 
-const ResourcesList = ({
+const ResourceList = ({
 	resources,
 	setSelectedResourceId,
-}: ResourcesListProps) => {
+}: ResourceListProps) => {
 	const handleClick = (resourceId: string, ev: BaseSyntheticEvent) => {
 		ev.preventDefault();
 		setSelectedResourceId(resourceId);
@@ -25,10 +29,9 @@ const ResourcesList = ({
 			}}
 			data-testid={resource.resourceId}
 		>
-			<td>{resource.resourceTitle}</td>
-			<td>{resource.resourceTypeCode}</td>
+			<td>{resource.title}</td>
+			<td>{getFirstAuthorName(resource.authors)}</td>
 			<td>{formatDate_MMM_YYYY(resource.publishedDate)}</td>
-			<td>{booleanToYesNo(resource.lendableFlag)}</td>
 		</tr>
 	));
 
@@ -37,9 +40,8 @@ const ResourcesList = ({
 			<thead>
 				<tr>
 					<th>Resource Title</th>
-					<th>Resource Type</th>
+					<th>Author</th>
 					<th>Published Date</th>
-					<th>Lendable?</th>
 				</tr>
 			</thead>
 			<tbody>{rows}</tbody>
@@ -47,4 +49,4 @@ const ResourcesList = ({
 	);
 };
 
-export default ResourcesList;
+export default ResourceList;
