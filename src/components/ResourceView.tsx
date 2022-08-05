@@ -21,7 +21,12 @@ const ResourceView = ({ resource }: ResourceViewProps) => {
 	return (
 		<div role="resource-detail">
 			<h3>{title}</h3>
-			<p>Author: {authors ? authors[0].authorName : 'none listed'}</p>
+			<p>
+				Author:{' '}
+				{authors && authors[0] && authors[0].authorName
+					? authors[0].authorName
+					: 'none listed'}
+			</p>
 			<p>ISBN: {isbn}</p>
 			<p>LC Call Number: {lcCallNumber}</p>
 			<p>

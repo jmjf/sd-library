@@ -67,7 +67,9 @@ function parseEntry(item, i) {
 		? [extractAuthorData(item.name)]
 		: [];
 	// remove empty objects
-	entry.authors = authors.filter((el) => Object.keys(el).length > 0);
+	entry.authors = [
+		...new Set(authors.filter((el) => Object.keys(el).length > 0)),
+	];
 
 	entry.lcCallNumber = cleanString(
 		extractClassification(item.classification, 'lcc')
@@ -89,7 +91,7 @@ function parseEntry(item, i) {
 					'lcsh | fast'.includes(su.authority.toLowerCase())
 		  )
 		: [item.subject];
-	entry.subjects = extractSubjects(rawSubjects);
+	entry.subjects = [...new Set(extractSubjects(rawSubjects))];
 
 	entry.publisherName = cleanString(
 		getOriginKey(item.originInfo, 'publisher')
